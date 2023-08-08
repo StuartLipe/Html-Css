@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>liinks</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+        a {
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+
+        }
+        a:visited {
+            color: darkred;
+        }
+        a:hover {
+            color: black;
+            text-decoration: underline;
+        }
+        a:active {
+            color: yellow;
+        }
+        .especial {
+            background-color: tomato;
+        }
+        .especial::before{
+            content: ' → ';
+        }
+        .especial::after {
+            content: ' ← ';
+            text-decoration: none;
+            font-weight: normal;
+            color: darkgray;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://www.cursoemvideo.com/curso/curso-html5-e-css3-modulo-2-de-5-40-horas/" target="_blank">Perfil ods curso</a></li>
+        <li> <a href="https://mangaschan.com/" class="especial">mangaschan</a></li>
+        <li> <a href="https://www.instagram.com/llipe_alls/" class="especial">instagram</a></li>
+    </ul>
+    
+</body>
+</html>
