@@ -20,7 +20,6 @@ table
 th,td 
 {
     border: 1px solid black;
-    width: 400px;
     padding: 10px;
 
     
@@ -36,17 +35,20 @@ th,td
 </head>
 <body>
     <table>
-        <thead>
+        
             <tr>
                 <th rowspan="2" scope="col" class="cor">Área</th>
                 <th rowspan="2" scope="col" class="cor">Disciplinas</th>
                 <th colspan="2" scope="colgroup" class="cor">Notas</th>
+                
+                <th  rowspan="2" scope="col" class="cor">Media</th>
+            <tr>
                 <th scope="colgroup" class="cor">Nota 1</th>
                 <th scope="colgroup" class="cor">Nota 2</th>
-                <th  rowspan="2" scope="col" class="cor">Media</th>
             </tr>
-        </thead>
-        <tbody>
+            </tr>
+        
+        
             <tr>
                 <th rowspan="3" scope="rowgroup">Exatas</th>
                 <td>Matemática</td>
@@ -85,13 +87,13 @@ th,td
                 <td>0.0</td>
                 <td>0.0</td>
             </tr>
-        </tbody>
-        <tfoot>
+        
+        
             <tr>
                 <th colspan="4" scope="row" class="cor">Media De humanas</th>
                 <td class="cor">0.0</td>
             </tr>
-        </tfoot>
+        
         
     </table>
 </body>
